@@ -65,7 +65,7 @@ window.addEventListener("load", function(){
                document.getElementById("fuelStatus").innerHTML = "Fuel Level high enough for launch"
                showShuttleStatus(status); 
             }else {
-               \
+               
                status = 3;
                showShuttleStatus(status);
                fetch("https://handlers.education.launchcode.org/static/planets.json").then(function(response){
@@ -94,7 +94,7 @@ window.addEventListener("load", function(){
    }
  
    document.addEventListener("submit", function(){   
-      
+      debugger;
       launchCheck();
       event.preventDefault();
       
